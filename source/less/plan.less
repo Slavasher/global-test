@@ -1,0 +1,63 @@
+.plan {
+  display: flex;
+  margin-top: 49px;
+}
+
+.plan__img {
+  transform-style: preserve-3d;
+  padding: 0;
+  margin: 0;
+}
+
+.plan__people {
+  display: inline-block;
+  overflow: hidden;
+  width: 80px;
+
+}
+
+.plan__people:not(:first-child) {
+  margin-left: -60px;
+  transform: rotateY(-1deg);
+}
+
+.plan__people img {
+  width: 100%;
+  display: block;
+
+}
+
+.plan__people__i {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  background-color: @orange1;
+  margin: 0;
+  margin-left: 18px;
+  border: 3px solid #FFFFFF;
+}
+
+.plan__people__i::before {
+  content: "+";
+  height: 32px;
+  width: 33px;
+  font-size: 23px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-family: courier;
+  color: white;
+}
+
+.plan__price {
+  margin: auto 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: @gray2;
+  span {
+    color: @orange1;
+  }
+}

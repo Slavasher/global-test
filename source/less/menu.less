@@ -1,0 +1,34 @@
+.menu {
+  display: flex;
+  padding: 0;
+  margin: 0;
+
+}
+
+.menu__item {
+  list-style: none;
+  margin-right: 48px;
+
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+}
+
+.menu__text {
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  color: @black1;
+}
+
+.menu__text--active {
+  position: relative;
+  width: 21px;
+  height: 0px;
+
+  border-bottom: 1.5px solid #FB9B69;
+}
